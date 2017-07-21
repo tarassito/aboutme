@@ -24,3 +24,12 @@ p {
     height: 70px;
     width: 150px;
 }
+ 
+ol {
+        font-family:'Architects+Daughter';
+}
+
+.hobbies{
+    height: 50px;
+    width: 50px;
+}
