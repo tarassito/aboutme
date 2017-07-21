@@ -1,0 +1,26 @@
+h1 {
+    font-family: 'Artifika';
+    font-size: 26;
+
+}
+
+p {
+    font-family:'Architects+Daughter';
+}
+
+.toolbar li{
+    display:inline;
+    font-family: 'Artifika';
+    border: 2px solid;
+    
+}
+
+.follow-button{
+    height: 50px;
+    width: 50px;
+}
+
+.projects-logo{
+    height: 70px;
+    width: 150px;
+}

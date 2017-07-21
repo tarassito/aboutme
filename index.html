@@ -4,12 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Taras Struk personal site</title>
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Artifika" rel="stylesheet">
+    <link = href="index.css" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <nav>
-            <ul>
+            <ul class="toolbar">
                 <li>About</Li>
                 <li>IT Education</li>
                 <li>My projects</li>
@@ -26,32 +28,50 @@
         <section id="About">
             <h1>Taras Struk</h1>
                <h2>entrepreneur</h2>
+                  <img src="img/aboutme.png" alt="About me">
                   <p> Hello, my name is Taras Struk. I graduated a Master Program in "Economics. Strategy of Innovations" in 2011. Since then, I have created several projects. But now I decide to change my style of life and learn to creat software. I want to get
                       job in a big IT company. And that's make me feel very excited. On this site you will find my entrepreneur projects, IT education and things that make me feel good.</p>
         </section>
         <section id="IT Education">
             <h1>IT Education</h1>
                <h2>HTML5/ CSS3/ JavaScript Fundamentals</h2>
+                  <img src="img/softserve.png" alt="Softserve logo">
                   <p>01. Building the User Interface by Using HTML5: Text, Graphics, and Media 02. Bulding the User Interface by Using HTML5: Organization, Input, Validation. </p>
                <h2>JavaScript courses</h2>
+                  <img src="img/codeacademy.png" alt="Codeacademy logo">
                   <p></p>
         </section>
         <section id="My projects">
             <h1>My projects</h1>
                <h2>Fresh Bar</h2>
+                  <img src="img/freshbarlogo.png" class="projects-logo" alt="Fresh Bar logo">
+                  <p>Sandwiches & snacks delivery service in offices.</p>
                <h2>Freshbike</h2>
+                  <img src="img/freshbike.jpg" class="projects-logo" alt="FreshBike logo">
+                  <p>First fresh juices bike-bar on a solar energy.</p>
                <h2>Babystreet.com.ua</h2>
+                  <img src="img/babystreet.jpg" class="projects-logo" alt="Babystreet.com.ua logo">
+                  <p>Baby goods internet store.</p>
         </section>
         <section id="Hobbies">
             <h1>Thinks that make me happy</h1>
         </section>
         <section id="Follow me">
             <h1>Follow me</h1>
-            <img src="img/buttons/facebook.png" alt="Taras Struk Facebook">
-            <img src="img/buttons/instagram.jpg" alt="Taras Struk Instagram">
+            <a href="https://www.facebook.com/taras.struk.56"><img class="follow-button" src="img/buttons/facebook.png" alt="Taras Struk Facebook"></a>
+            <a href="https://www.instagram.com/tarassito/"></a><img class="follow-button" src="img/buttons/instagram.jpg" alt="Taras Struk Instagram">
         </section>
         <section id="Contacts">
             <h1>Contacts</h1>
+            <form method="POST" action="https://formspree.io/tarassito@gmail.com">
+                <input type="text" name="name" placeholder="Name">
+                 <br>
+                <input type="email" name="email" placeholder="e-mail">
+                 <br>
+                <textarea rows = "5" cols = "50" name = "comment"> Type your message here
+                </textarea>  
+                <input type="submit" value="Send">
+            </form>
         </section>
     </main>
 </body>
