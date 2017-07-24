@@ -6,19 +6,12 @@ body {
 nav {
     display: flex;
     justify-content: flex-end;
-}
-
-#logo {
-    width: 900px;
-}
-
-#aboutme-pic {
-    float: left;
-    margin: auto;
+    border: 2px;
 }
 
 section {
-   overflow: auto;
+    overflow: auto;
+    margin-bottom: 5%;
 }
 
 h1 {
@@ -33,19 +26,37 @@ h2 {
     font-size: 22;
     display: flex;
     justify-content: center;
-    overflow:auto;
+    overflow: auto;
 }
 
 p {
     font-family: 'Architects+Daughter';
 }
+
+#logo {
+    width: 900px;
+}
+
+#aboutme-pic {
+    float: left;
+}
+
+.education-pictures {
+    width: 300px;
+    height: 250px;
+  
+}
+
 #softserve {
     float: left;
-    width: 50%;}
+    width: 50%;
+    height: 100px;
+}
+
+#online-courses {
+    float: left;
     
-    #online-courses {
-    float: right;
-    width: 50%;}
+}
 
 .toolbar li {
     display: inline;
@@ -58,14 +69,17 @@ p {
     height: 50px;
     width: 50px;
 }
+
 .projects {
     width: 33%;
     float: left;
 }
+
 .projects-logo {
     height: 70px;
     width: 150px;
 }
+
 
 ol {
     font-family: 'Architects+Daughter';
@@ -75,28 +89,14 @@ ol {
     height: 50px;
     width: 50px;
 }
+
 .gallery {
     display: flex;
     justify-content: space-around;
 }
 
-.education-pictures {
-    width: 300px;
-    height: 250px;
-   margin-right: 10%;
-  
-}
-.fresh-bar {
-    float: left;
-    width: 33%
-}
-
-.freshbike {
-    float: left;
-    width: 33%
-}
-
 .contact-form {
     display: flex;
     justify-content: center;
+    margin-bottom: 5%;
 }
