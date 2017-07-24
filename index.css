@@ -1,35 +1,82 @@
+body {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#logo {
+    width: 900px;
+}
+
+#aboutme-pic {
+    float: left;
+    margin: auto;
+}
+
+section {
+   overflow: auto;
+}
+
 h1 {
     font-family: 'Artifika';
     font-size: 26;
+    display: flex;
+    justify-content: center;
+}
 
+h2 {
+    font-family: 'Artifika';
+    font-size: 22;
+    display: flex;
+    justify-content: center;
 }
 
 p {
-    font-family:'Architects+Daughter';
+    font-family: 'Architects+Daughter';
 }
+#softserve {
+    float: left;
+    width: 50%;}
+    
+    #online-courses {
+    float: right;
+    width: 50%;}
 
-.toolbar li{
-    display:inline;
+.toolbar li {
+    display: inline;
     font-family: 'Artifika';
     border: 2px solid;
-    
+    padding: 3px;
 }
 
-.follow-button{
+.follow-button {
     height: 50px;
     width: 50px;
 }
 
-.projects-logo{
+.projects-logo {
     height: 70px;
     width: 150px;
 }
- 
+
 ol {
-        font-family:'Architects+Daughter';
+    font-family: 'Architects+Daughter';
 }
 
-.hobbies{
+.hobbies {
     height: 50px;
     width: 50px;
+}
+.education-picture {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+}
+.fresh-bar {
+    float: left;
+    width: 33%
 }
