@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Taras Struk personal site</title>
     <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Artifika" rel="stylesheet">
     <link href="index.css" rel="stylesheet">
@@ -11,14 +12,17 @@
 <body>
     <header>
         <nav>
-            <ul class="toolbar">
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="index.html#it-education">IT Education</a></li>
-                <li><a href="index.html#my-projects">My projects</a></li>
-                <li><a href="index.html#hobbies">Hobbies</a></li>
-                <li><a href="index.html#follow-me">Folow me</a></li>
-                <li><a href="index.html#contacts">Contacts</a></li>
-            </ul>
+            <div class="dropdown">
+                <button class="dropbtn">Menu</button>
+                <div class="dropdown-content">
+                    <a href="index.html#about">About</a>
+                    <a href="index.html#it-education">IT Education</a>
+                    <a href="index.html#my-projects">My projects</a>
+                    <a href="index.html#hobbies">Hobbies</a>
+                    <a href="index.html#follow-me">Follow me</a>
+                    <a href="index.html#contacts">Contacts</a>
+                </div>
+            </div>
         </nav>
         <div>
             <img id="logo" src="img/taras-struk-photo.jpg" alt="Taras Struk photo">
@@ -59,20 +63,22 @@
         </section>
         <section id="my-projects">
             <h1>My projects</h1>
-            <div class="projects">
-                <h2>Fresh Bar</h2>
-                <img src="img/projects/freshbarlogo.png" class="projects-logo" alt="Fresh Bar logo">
-                <p>Sandwiches & snacks delivery service in offices.</p>
-            </div>
-            <div class="projects">
-                <h2>Freshbike</h2>
-                <img src="img/projects/freshbike.jpg" class="projects-logo" alt="FreshBike logo">
-                <p>First fresh juices bike-bar on a solar energy.</p>
-            </div>
-            <div class="projects">
-                <h2>Babystreet.com.ua</h2>
-                <img src="img/projects/babystreet.jpg" class="projects-logo" alt="Babystreet.com.ua logo">
-                <p>Baby goods internet store.</p>
+            <div>
+                <div class="projects">
+                    <h2>Fresh Bar</h2>
+                    <img src="img/projects/freshbarlogo.png" class="projects-logo" alt="Fresh Bar logo">
+                    <p>Sandwiches & snacks delivery service in offices.</p>
+                </div>
+                <div class="projects">
+                    <h2>Freshbike</h2>
+                    <img src="img/projects/freshbike.jpg" class="projects-logo" alt="FreshBike logo">
+                    <p>First fresh juices bike-bar on a solar energy.</p>
+                </div>
+                <div class="projects">
+                    <h2>Babystreet.com.ua</h2>
+                    <img src="img/projects/babystreet.jpg" class="projects-logo" alt="Babystreet.com.ua logo">
+                    <p>Baby goods internet store.</p>
+                </div>
             </div>
         </section>
         <section id="hobbies">
