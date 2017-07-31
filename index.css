@@ -13,7 +13,8 @@ nav a {
     margin: 0 5px 0 5px;
 }
 
-a, a:visited {
+a,
+a:visited {
     color: blue;
 }
 
@@ -38,6 +39,7 @@ h2 {
 
 p {
     font-family: 'Architects+Daughter';
+    margin: 0 10px;
 }
 
 #logo {
@@ -121,6 +123,9 @@ ol {
 
 @media(max-width: 420px) {
     #logo {
+        width: 100%;
+    }
+    #aboutme-pic {
         width: 100%;
     }
     #my-projects>div {
