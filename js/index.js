@@ -1,6 +1,6 @@
 $(function() {
-    $('index input[type=submit]'.click(sendForm))
-})
+    $('form input[type=submit]').click(sendForm);
+});
 
 function sendForm(e) {
     e.preventDefault();
@@ -16,5 +16,25 @@ function sendForm(e) {
         })
         .done(function() {
                 $('form')[0].reset();
-                $('#form-result').html('<p>I ll connect you as soon as posibble < /p>');
-        })
+                $('#form-result').html(`<img src="img/hobbies/thank-you.jpg" class="form-result"> </img>`);
+                $('#contacts').hide();
+                
+        });
+}
+$('.smooth').on('click', function(event) {
+        var target = $(this.getAttribute('href'));
+        if (target.length) {
+            event.preventDefault();
+            $('html, body').stop().animate({
+                scrollTop: target.offset().top
+            }, 1500);
+        }
+    });
+
+
+
+//  $('#dropbtn').click(function(){
+//     $('#dropbtn-list').slideToggle("slow");
+//     });
+    
+    

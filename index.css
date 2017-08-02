@@ -37,9 +37,12 @@ h2 {
     justify-content: center;
 }
 
-p {
-    font-family: 'Architects+Daughter';
+p,
+small,
+li {
+    font-family: 'Spectral';
     margin: 0 10px;
+    font-size: 24;
 }
 
 #logo {
@@ -117,11 +120,25 @@ ol {
     margin: 10% 10%
 }
 
-.contact-form textarea {
-    width: 100%;
+.form-result {
+    margin: 0 25%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+#submit {
+    text-align: center;
 }
 
 @media(max-width: 420px) {
+    p,
+    small {
+        font-family: 'Architects+Daughter';
+        margin: 0 5%;
+    }
     #logo {
         width: 100%;
     }

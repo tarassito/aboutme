@@ -5,26 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Taras Struk personal site</title>
-    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Artifika" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Spectral|Artifika" rel="stylesheet">
     <link href="index.css" rel="stylesheet">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <script src="js/index.js"></script>
 </head>
 
 <body>
     <header>
         <nav>
             <div class="dropdown">
-                <button class="dropbtn">Menu</button>
-                <div class="dropdown-content">
-                    <a href="index.html#about">About</a>
-                    <a href="index.html#it-education">IT Education</a>
-                    <a href="index.html#my-projects">My projects</a>
-                    <a href="index.html#hobbies">Hobbies</a>
-                    <a href="index.html#follow-me">Follow me</a>
-                    <a href="index.html#contacts">Contacts</a>
+                <button class="dropbtn" id="dropbtn">Menu</button>
+                <div class="dropdown-content" id="dropbtn-list">
+                    <a href="#about" class="smooth">About</a>
+                    <a href="#it-education" class="smooth">IT Education</a>
+                    <a href="#my-projects" class="smooth">My projects</a>
+                    <a href="#hobbies" class="smooth">Hobbies</a>
+                    <a href="#follow-me" class="smooth">Follow me</a>
+                    <a href="#contacts" class="smooth">Contacts</a>
                 </div>
             </div>
         </nav>
@@ -36,7 +34,7 @@
         <section id="about">
             <h1>Taras Struk</h1>
             <h2>entrepreneur</h2>
-            <img id="aboutme-pic" src="img/aboutme.png" alt="about me picture">
+            <img id="aboutme-pic" src="img/aboutme.png" alt="Taras Struk picture">
             <p> Hello, my name is Taras Struk. I graduated a Master Program in "Economics. Strategy of Innovations" in 2011. Since then, I have created several projects. But now I decide to change my style of life and learn to creat software. I want to get
                 job in a big IT company. And that's make me feel very excited. On this site you will find my entrepreneur projects, IT education and things that make me feel good.</p>
         </section>
@@ -97,6 +95,7 @@
                 <img src="img/hobbies/volleyball.png" class="hobbies" alt="Volleyball">
                 <img src="img/hobbies/music.png" class="hobbies" alt="Listen to music">
                 <img src="img/hobbies/spaghetti.png" class="hobbies" alt="Eating spaghetti">
+                <img src="img/hobbies/coding.png" class="hobbies" alt="Coding">
             </div>
         </section>
         <section id="follow-me">
@@ -116,16 +115,18 @@
                     <br>
                     <textarea rows="5" cols="50" id="comment" placeholder="Type your message here"></textarea>
                     <br>
-                    <input type="submit" value="Send ">
+                    <input type="submit" id="submit" value="Send ">
                 </form>
-                <div id="form-result "></div>
             </div>
         </section>
+        <div id="form-result"></div>
     </main>
     <footer>
         <small>Icons made by <a href="http://www.freepik.com " title="Freepik ">Freepik</a> from <a href="https://www.flaticon.com/ " title="Flaticon ">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/
                         " title="Creative Commons BY 3.0 " target="_blank ">CC 3.0 BY</a></small>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
