@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Taras Struk personal site</title>
-    <link href="https://fonts.googleapis.com/css?family=Spectral|Artifika" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Spectral%7CArtifika" rel="stylesheet">
     <link href="index.css" rel="stylesheet">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
@@ -44,24 +46,49 @@
             <div class="it">
                 <div id="softserve">
                     <h2>HTML5/ CSS3/ JavaScript Fundamentals</h2>
-                    <img class="education-pictures" src="img/education/softserve.png" alt="Softserve logo">
-                    <ol>
-                        <li>Building the User Interface by Using HTML5: Text, Graphics, and Media </li>
-                        <li>Bulding the User Interface by Using HTML5: Organization, Input, Validation. </li>
-                        <li>Building the User Interface by Using HTML5: Organization, Input, and Validation</li>
-                        <li>Understanding CSS Essentials: Content Flow, Positioning, and Styling</li>
-                        <li>Understanding CSS Essentials: Layouts, Managing Text Flow, Managing the Graphical Interface</li>
-                    </ol>
+                    <div>
+                        <img class="education-pictures" src="img/education/softserve.png" alt="Softserve logo">
+                    </div>
+                    <div id="carousel" class="carousel slide" data-interval="false">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <p>01. Building the User Interface by Using HTML5: Text, Graphics, and Media </p>
+                                <p>02. Bulding the User Interface by Using HTML5: Organization, Input, Validation. </p>
+                                <p>03. Building the User Interface by Using HTML5: Organization, Input, and Validation</p>
+                            </div>
+                            <div class="item">
+                                <p>04. Understanding CSS Essentials: Layouts, Managing Text Flow, Managing the Graphical Interface</p>
+                                <p>05. Understanding CSS Essentials: Content Flow, Positioning, and Styling</p>
+                                <p>06. Understanding JavaScript and Coding Essentials</p>
+                            </div>
+                            <div class="item">
+                                <p>07. Using objects in JavaScript. Accessing DOM in JavaScript</p>
+                                <p>08. DOM Manipulation and jQuery</p>
+                                <p>09. Making Ajax Queries</p>
+                                <p>10. Twitter BootStrap</p>
+                                <p>11. Introduction to Node.JS</p>
+                            </div>
+                            <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+                            <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+                        </div>
+
+                    </div>
                 </div>
                 <div id="online-courses">
                     <h2>On-line courses</h2>
-                    <br>
                     <img class="education-pictures" src="img/education/online-courses.png" alt="Codeacademy logo">
                     <ol>
                         <li> Codeacademy: JavaScript courses</li>
-                        <li> freecodecamp.org : HTML and CSS </li>
-                        <li> http://flukeout.github.io/: CSS</li>
-                        <li> http://www.flexboxdefense.com/</li>
+                        <li> freecodecamp.org : HTML and CSS, Basic JavaScript</li>
+                        <li> http://flukeout.github.io/: CSS learning </li>
+                        <li> http://www.flexboxdefense.com/ - A game for learning CSS flexbox</li>
+
                     </ol>
                 </div>
             </div>
@@ -123,9 +150,10 @@
     </main>
     <footer>
         <small>Icons made by <a href="http://www.freepik.com " title="Freepik ">Freepik</a> from <a href="https://www.flaticon.com/ " title="Flaticon ">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/
-                        " title="Creative Commons BY 3.0 " target="_blank ">CC 3.0 BY</a></small>
+                        " title="Creative Commons BY 3.0 " target="blank ">CC 3.0 BY</a></small>
     </footer>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="js/index.js"></script>
 </body>
 

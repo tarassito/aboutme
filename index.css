@@ -28,6 +28,7 @@ h1 {
     font-size: 26;
     display: flex;
     justify-content: center;
+    margin-left: 5px;
 }
 
 h2 {
@@ -35,6 +36,7 @@ h2 {
     font-size: 0.8em;
     display: flex;
     justify-content: center;
+    margin-left: 5px;
 }
 
 p,
@@ -43,6 +45,9 @@ li {
     font-family: 'Spectral';
     margin: 0 10px;
     font-size: 24;
+}
+.carousel {
+ width: 100%   
 }
 
 #logo {
@@ -55,7 +60,8 @@ li {
 
 .education-pictures {
     width: 170px;
-    margin: 0 20%;
+    display: block;
+    margin:  5px auto;
 }
 
 .it {
@@ -66,7 +72,28 @@ li {
 #softserve {
     display: flex;
     flex-direction: column;
+    width: 60%;
 }
+
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none
+}
+
+.glyphicon.glyphicon-triangle-right, .glyphicon.glyphicon-triangle-left{
+    color: #1D93D0;
+    top: 20px;
+}
+
+.item p {
+    margin: 0 13%;
+}
+
+/*.left.carousel-control {
+    position: absolute;
+    top: 10px;
+    width: 15%;
+}*/
 
 #online-courses {
     display: flex;
@@ -99,7 +126,7 @@ li {
 }
 
 .projects-logo {
-    width: 100%;
+    width: 97%;
 }
 
 ol {
@@ -121,7 +148,9 @@ ol {
 }
 
 .form-result {
-    margin: 0 25%;
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
 }
 
 form {

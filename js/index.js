@@ -15,26 +15,35 @@ function sendForm(e) {
             dataType: "json"
         })
         .done(function() {
-                $('form')[0].reset();
-                $('#form-result').html(`<img src="img/hobbies/thank-you.jpg" class="form-result"> </img>`);
-                $('#contacts').hide();
-                
+            $('form')[0].reset();
+            $('#form-result').html(`<img src="img/hobbies/thank-you.jpg" class="form-result"> </img>`);
+            $('#contacts').hide();
+
         });
 }
 $('.smooth').on('click', function(event) {
-        var target = $(this.getAttribute('href'));
-        if (target.length) {
-            event.preventDefault();
-            $('html, body').stop().animate({
-                scrollTop: target.offset().top
-            }, 1500);
-        }
+    var target = $(this.getAttribute('href'));
+    if (target.length) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+            scrollTop: target.offset().top
+        }, 1500);
+    }
+});
+
+setCarouselHeight('#carousel');
+
+function setCarouselHeight(id) {
+    var slideHeight = [];
+    $(id + ' .item').each(function() {
+        slideHeight.push($(this).height());
     });
-
-
+    max = Math.max.apply(null, slideHeight);
+    $(id + ' .carousel-inner').each(function() {
+        $(this).css('height', max + 'px');
+    });
+}
 
 //  $('#dropbtn').click(function(){
 //     $('#dropbtn-list').slideToggle("slow");
 //     });
-    
-    
