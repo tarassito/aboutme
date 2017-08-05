@@ -5,41 +5,42 @@ $(function() {
 function sendForm(e) {
     e.preventDefault();
     $.ajax({
-            url: "https://formspree.io/tarassito@gmail.com",
-            method: "POST",
-            data: {
-                name: $('#name').val(),
-                email: $('#email').val(),
-                comment: $('#comment').val()
-            },
-            dataType: "json"
-        })
-        const form = document.getElementById('form');
+        url: "https://formspree.io/tarassito@gmail.com",
+        method: "POST",
+        data: {
+            name: $('#name').val(),
+            email: $('#email').val(),
+            comment: $('#comment').val()
+        },
+        dataType: "json"
+    })
+    const form = document.getElementById('form');
     if (form.checkValidity()) {
-    	 $('form')[0].reset();
-            $('#form-result').html(`<img src="img/hobbies/thank-you.jpg" class="form-result"> </img>`);
-            $('#contacts').hide();  
-    } else {
-    	alert('Please fill out the form correctly');
-    }   
+        $('form')[0].reset();
+        $('#form-result').html(`<img src="img/hobbies/thank-you.jpg" class="form-result"> </img>`);
+        $('#contacts').hide();
+    }
+    else {
+        alert('Please fill out the form correctly');
+    }
 }
-        
-        
-        
-        
-        
-        
-        
-        
-        /*.done(function() {
-            $('form')[0].reset();
-            $('#form-result').html(`<img src="img/hobbies/thank-you.jpg" class="form-result"> </img>`);
-            $('#contacts').hide();
 
-        })
-        .fail(function(e) { 
-            alert("sorry");
-        });*/
+
+
+
+
+
+
+
+/*.done(function() {
+    $('form')[0].reset();
+    $('#form-result').html(`<img src="img/hobbies/thank-you.jpg" class="form-result"> </img>`);
+    $('#contacts').hide();
+
+})
+.fail(function(e) { 
+    alert("sorry");
+});*/
 
 
 
