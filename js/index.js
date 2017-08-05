@@ -14,13 +14,35 @@ function sendForm(e) {
             },
             dataType: "json"
         })
-        .done(function() {
+        const form = document.getElementById('form');
+    if (form.checkValidity()) {
+    	 $('form')[0].reset();
+            $('#form-result').html(`<img src="img/hobbies/thank-you.jpg" class="form-result"> </img>`);
+            $('#contacts').hide();  
+    } else {
+    	alert('Please fill out the form correctly');
+    }   
+}
+        
+        
+        
+        
+        
+        
+        
+        
+        /*.done(function() {
             $('form')[0].reset();
             $('#form-result').html(`<img src="img/hobbies/thank-you.jpg" class="form-result"> </img>`);
             $('#contacts').hide();
 
-        });
-}
+        })
+        .fail(function(e) { 
+            alert("sorry");
+        });*/
+
+
+
 $('.smooth').on('click', function(event) {
     var target = $(this.getAttribute('href'));
     if (target.length) {
